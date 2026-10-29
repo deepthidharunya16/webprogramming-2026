@@ -1,0 +1,581 @@
+PROJECTMATCH — PRESENTATION CONTENT
+
+Use this document as the complete source brief for creating a polished presentation about ProjectMatch.
+
+PRESENTATION GOAL
+
+Create a premium, modern startup-style presentation explaining ProjectMatch as a student project-team discovery and collaboration platform. The presentation should feel product-led, visual, and credible—not like a generic college CRUD application.
+
+Recommended tone: confident, thoughtful, clear, human, product-focused.
+Recommended visual direction: dark midnight navy, black, crisp white, and blue accents. Use clean product screenshots or UI mockups, thin borders, generous whitespace, subtle grid details, and restrained motion. Avoid excessive gradients, neon gaming aesthetics, generic dashboards, and dense paragraphs.
+
+
+SLIDE 1 — TITLE
+
+Title: ProjectMatch
+Subtitle: Find the people who make ideas move.
+
+Supporting line:
+ProjectMatch helps students discover projects, meet compatible teammates, and build stronger teams through transparent matching.
+
+Visual direction:
+Use a hero view of the ProjectMatch workspace with a midnight blue interface, match scores, project cards, and a subtle blue grid or connection motif.
+
+Speaker note:
+ProjectMatch is designed around a simple belief: good student projects are not limited by ideas; they are often limited by finding the right people to build them with.
+
+
+SLIDE 2 — THE PROBLEM
+
+Title: Finding a project team is still strangely hard.
+
+Key points:
+
+- Students often discover projects through scattered chats, informal groups, or last-minute invitations.
+- Skill compatibility is usually judged by guesswork.
+- Students may have useful skills but not know which projects need them.
+- Project owners struggle to balance technical skills, roles, interests, and availability.
+- Existing solutions often feel like directories, portfolios, or college administration systems.
+
+Core insight:
+The challenge is not only discovering people. It is understanding whether they will work well together.
+
+
+SLIDE 3 — THE OPPORTUNITY
+
+Title: Student collaboration needs a better matching layer.
+
+Message:
+ProjectMatch connects the supply of student skills with the demand of real project ideas.
+
+It helps answer:
+
+- Who is a strong fit for this project?
+- Why are they a strong fit?
+- Which skills are missing from the current team?
+- Which teammate would improve the team balance most?
+- Can students connect without needing to know each other first?
+
+
+SLIDE 4 — THE SOLUTION
+
+Title: ProjectMatch turns discovery into a guided collaboration flow.
+
+Product loop:
+
+1. Create a student profile.
+2. Discover projects and people.
+3. See transparent compatibility scores.
+4. Understand why the match works.
+5. Build a balanced project team.
+6. Invite teammates and manage collaboration locally.
+
+Key differentiator:
+ProjectMatch does not show only a percentage. It explains the match.
+
+
+SLIDE 5 — PRODUCT EXPERIENCE
+
+Title: One workspace for the entire team-building journey.
+
+Main areas:
+
+- Overview dashboard
+- Student discovery
+- Project discovery
+- Project detail pages
+- Student profile detail pages
+- Team builder workspace
+- My Teams collaboration hub
+- Profile onboarding and editing
+- Settings and theme preferences
+- Login experience
+
+Visual suggestion:
+Show a connected product map with Overview → Discover → Project → Match → Team Builder → Invite.
+
+
+SLIDE 6 — STUDENT ONBOARDING
+
+Title: Onboarding feels like setup, not paperwork.
+
+The onboarding flow collects:
+
+- Name and role
+- Avatar/profile identity
+- Short bio
+- Skills
+- Skill proficiency
+- Interests
+- Availability
+- Previous project experience
+
+UX decisions:
+
+- The form is split into logical steps.
+- Progress is visible at every stage.
+- Each step has one clear question.
+- Validation prevents incomplete profiles.
+- Profile data is saved locally in the browser.
+
+Product benefit:
+Students can quickly create enough context for meaningful matching without filling out a long intimidating form.
+
+
+SLIDE 7 — STUDENT PROFILES
+
+Title: Profiles show more than a name and a list of skills.
+
+Each profile includes:
+
+- Avatar
+- Name and role
+- Short bio
+- Skill proficiency indicators
+- Interests
+- Availability
+- Previous project experience
+- Compatibility with relevant projects
+- Shared interests with other students
+
+Example proficiency display:
+
+React — 90%
+JavaScript — 84%
+Figma — 72%
+Prototyping — 68%
+
+Design principle:
+Profiles should make it easy to understand both what a student can do and what kind of work they care about.
+
+
+SLIDE 8 — DISCOVER PEOPLE
+
+Title: Discover people by fit, not by popularity.
+
+Discovery capabilities:
+
+- Search by name, skill, or role
+- Filter by role
+- Filter by skill
+- Filter by interest
+- Filter by availability
+- Sort by best match or recent activity
+- View empty states when no close matches exist
+
+Student cards show:
+
+- Name
+- Role
+- Key skills
+- Match percentage
+- Short description
+- Shared interests when relevant
+
+
+SLIDE 9 — PROJECT DISCOVERY
+
+Title: Browse projects with enough shape to join.
+
+Project examples:
+
+- Campus Cart — student sharing and exchange
+- Signal / Noise — calmer campus communication
+- Study Bloom — accountability for study circles
+- OpenShelf — better library discovery
+- Lowkey Local — local events and spaces
+- Airloom — visual air-quality storytelling
+
+Project discovery includes:
+
+- Search
+- Category filtering
+- Skill filtering
+- Team-size filtering
+- Match score
+- Deadline
+- Project status
+
+Important product choice:
+Projects are not all AI-related. The marketplace includes education, community, climate, wellbeing, sustainability, and civic-tech ideas.
+
+
+SLIDE 10 — PROJECT DETAILS
+
+Title: Every project explains what it needs next.
+
+Project detail pages show:
+
+- Project title
+- Description
+- Category
+- Owner
+- Project status
+- Required skills
+- Skill importance
+- Team size
+- Current members
+- Remaining roles
+- Deadline
+- Compatibility with the current student
+
+Primary actions:
+
+- Find teammates
+- Join project
+- Share project
+- Edit project when you are the owner
+- Delete project when you are the owner
+
+
+SLIDE 11 — THE MATCHING ENGINE
+
+Title: Transparent matching without pretending to be AI.
+
+ProjectMatch uses deterministic JavaScript scoring. No machine learning or external AI API is required.
+
+Scoring model:
+
+- Skill compatibility — 50%
+- Interest compatibility — 20%
+- Role compatibility — 10%
+- Availability — 10%
+- Previous experience — 10%
+
+Scores are normalized to a range of 0–100.
+
+Example:
+
+94% MATCH
+
+Positive reasons:
+
+- Strong React proficiency
+- Relevant Python experience
+- Shared climate interest
+- Availability lines up
+
+Warning reasons:
+
+- Limited UI/UX experience
+- Different interest areas
+
+
+SLIDE 12 — EXPLAINABILITY
+
+Title: A score is useful only when people understand it.
+
+The compatibility panel breaks the score into:
+
+- Skills
+- Interests
+- Role
+- Availability
+- Experience
+
+Each category has:
+
+- A percentage
+- A weighted contribution
+- A short human-readable reason
+
+Product benefit:
+Students can make informed decisions instead of blindly trusting an unexplained ranking.
+
+
+SLIDE 13 — TEAM BUILDER
+
+Title: From individual matches to a balanced team.
+
+The Team Builder is a three-column workspace.
+
+LEFT — Project requirements:
+
+- Required roles and skills
+- Essential, important, and nice-to-have priorities
+- Filled and missing states
+- Team gaps
+
+CENTER — Current team:
+
+- Selected members
+- Roles
+- Key skills
+- Individual match percentages
+- Overall team compatibility
+- Remove member actions
+- Persistent team state
+
+RIGHT — Recommended teammates:
+
+- Ranked candidates
+- Project match
+- Missing-skill coverage
+- Role coverage
+- Team diversity considerations
+- View profile
+- Invite member
+
+
+SLIDE 14 — TEAM HEALTH
+
+Title: Team health makes balance visible.
+
+Team health indicators:
+
+- Skill coverage
+- Role coverage
+- Interest alignment
+- Overall team compatibility
+
+Example summary:
+
+Skill coverage — 82%
+Role coverage — 75%
+Interest alignment — 91%
+Overall team health — 86%
+
+Team gap example:
+
+Team gap detected
+Missing: Backend, UI/UX
+
+Product benefit:
+The project owner can see what the team is missing before the project starts.
+
+
+SLIDE 15 — MY TEAMS
+
+Title: A collaboration hub, not just a member list.
+
+My Teams includes:
+
+- Active connections
+- Project circles
+- Pending invitations
+- People in your orbit
+- Contact cards
+- Connect actions
+- Direct links into team builders
+- Links back to Discover
+
+Purpose:
+This creates a lightweight social layer around the project marketplace so relationships continue after the first match.
+
+
+SLIDE 16 — INVITATIONS AND LOCAL STATE
+
+Title: Collaboration actions feel real, even in a browser-only build.
+
+Invitation states:
+
+- Pending
+- Accepted
+- Declined
+
+Interactions:
+
+- Invite a candidate
+- Accept a request
+- Decline a request
+- Add a member to a team
+- Remove a member
+- Replace a member
+
+Persistence:
+Profile data, projects, teams, invitations, and theme preferences are stored locally using localStorage through a centralized storage abstraction.
+
+
+SLIDE 17 — SETTINGS AND PERSONALIZATION
+
+Title: The workspace adapts to the person using it.
+
+Settings include:
+
+- Midnight theme: dark blue, white, and black
+- Pastel Day theme: soft yellow, peach, pink, blue, and white
+- Burgundy theme: maroon, wine, and rose
+- Motion preference
+- Profile visibility
+- Local data reset
+
+Design principle:
+Personalization changes the atmosphere without changing the product’s information architecture.
+
+
+SLIDE 18 — LOGIN EXPERIENCE
+
+Title: A calmer entry point.
+
+The login page is intentionally distinct from the main workspace.
+
+Visual treatment:
+
+- Soft pastel illustration field
+- Hand-drawn doodle motifs
+- Glassmorphism login card
+- Email/password form
+- Password visibility control
+- Remember-me option
+- Google sign-in entry point
+- Link to create a profile
+
+Implementation note:
+The Google authentication button is currently a frontend-only placeholder. Real OAuth credentials and backend/session handling can be connected later.
+
+
+SLIDE 19 — TECHNICAL ARCHITECTURE
+
+Title: Lightweight by design, ready for a real backend later.
+
+Technology:
+
+- HTML5
+- CSS3
+- Vanilla JavaScript
+- Browser localStorage
+- Hash-based client-side routing
+
+No backend technologies were introduced:
+
+- No PHP
+- No MySQL
+- No Express
+- No Firebase
+- No Supabase
+- No MongoDB
+- No external AI API
+
+Architecture principles:
+
+- Centralized storage abstraction
+- Deterministic matching utilities
+- Reusable rendering helpers
+- Semantic HTML
+- Responsive CSS
+- Product-specific mock data
+
+
+SLIDE 20 — USER JOURNEY
+
+Title: One coherent product flow.
+
+Flow:
+
+Landing / Login
+→ Profile setup
+→ Overview dashboard
+→ Discover people
+→ Browse projects
+→ Open project detail
+→ Review match breakdown
+→ Open Team Builder
+→ Invite teammates
+→ Manage the project circle
+
+Design goal:
+Every screen should naturally answer the question: “What is the next useful thing I can do?”
+
+
+SLIDE 21 — PRODUCT QUALITY
+
+Title: Designed to feel launchable.
+
+Quality decisions:
+
+- Dark-first product language with multiple themes
+- Responsive desktop, tablet, and mobile layouts
+- Independent workspace scrolling
+- Scrollable fixed sidebar
+- Keyboard-visible focus states
+- Reduced-motion support
+- Validation and empty states
+- Toast feedback
+- Hover and press states
+- Animated match scores and progress bars
+- Local persistence
+- No unnecessary decorative UI
+
+
+SLIDE 22 — FUTURE EXTENSIONS
+
+Title: A strong foundation for the next layer.
+
+Potential future integrations:
+
+- Real Google OAuth
+- Backend profile and project persistence
+- Real-time team invitations
+- Direct messaging
+- Calendar availability integration
+- Project updates and milestones
+- More advanced role and diversity balancing
+- Institution or campus communities
+- Moderation and reporting
+- Analytics for project success
+
+Important:
+These are future extensions, not required for the current browser-only MVP.
+
+
+SLIDE 23 — CLOSING
+
+Title: Better teams begin with better context.
+
+Closing message:
+ProjectMatch gives students a clearer way to find projects, understand compatibility, and build teams with intention.
+
+Final line:
+Find the people who make ideas move.
+
+
+DEMO SCRIPT
+
+1. Open the login page.
+2. Show the glassmorphism login card and Google sign-in button.
+3. Enter the workspace.
+4. Show the overview dashboard and match-focused project cards.
+5. Open Discover and demonstrate search and filters.
+6. Open a student profile detail page.
+7. Open Projects and demonstrate project filters.
+8. Open a project detail page.
+9. Show the compatibility panel and explain the five scoring factors.
+10. Click Find teammates.
+11. Show the three-column Team Builder.
+12. Point out missing skills, team health, and recommended teammates.
+13. Invite a teammate.
+14. Open My Teams and show project circles and contacts.
+15. Open Settings and switch between Midnight, Pastel Day, and Burgundy themes.
+16. End on the closing statement: “Better teams begin with better context.”
+
+
+DESIGN BRIEF FOR THE PRESENTATION GENERATOR
+
+Create a polished 16:9 presentation with 20–23 slides.
+
+Use:
+
+- Midnight navy, black, white, and blue as the primary presentation palette
+- Small pastel highlights only when showing the Pastel Day theme
+- Burgundy accents only when showing the Burgundy theme
+- Space Grotesk-style display typography for titles
+- Clean sans-serif body typography
+- Thin borders and understated grid motifs
+- UI mockups, diagrams, score cards, and product flow visuals
+- Generous whitespace
+- Short text blocks
+- One core message per slide
+
+Avoid:
+
+- Generic stock photos
+- Corporate handshake imagery
+- Excessive emoji
+- Overloaded bullet lists
+- Neon effects
+- Generic AI visuals
+- Fake analytics charts
+- Claims that ProjectMatch uses machine learning
+
+If screenshots are unavailable, create accurate interface mockups based on the product details in this document. Keep the interface dark blue, white, and black for the main product screens, with the login page using pastel glassmorphism.
+
